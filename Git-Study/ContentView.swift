@@ -19,7 +19,10 @@ struct ContentView: View {
                     NavigationLink {
                         Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        HStack {
+                            Image(systemName: "chevron.right")
+//                            Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        }
                     }
                 }
                 .onDelete(perform: deleteItems)
