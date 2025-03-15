@@ -30,6 +30,7 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
+                    Text("Hello")
                 }
                 ToolbarItem {
                     Button(action: addItem) {
